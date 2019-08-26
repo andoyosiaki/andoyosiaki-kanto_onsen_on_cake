@@ -442,7 +442,7 @@ background-color: snow;
   }
 
   .article_box{
-    max-width: calc(47.999% - 20px);
+    max-width: calc(46.4% - 14px);
   }
 
   .article_box:nth-child(3n){
