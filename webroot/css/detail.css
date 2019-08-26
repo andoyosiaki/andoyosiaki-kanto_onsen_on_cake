@@ -49,6 +49,8 @@ a{
 }
 .title{
   font-size: 34px;
+  line-height: 1;
+  margin-bottom: 15px;
 }
 
 .section1{
@@ -69,10 +71,12 @@ a{
 
 .front-img{
   width: 50%;
+  margin: 0 auto;
+}
+
+.front-img img{
   box-shadow: 0 7px 21px rgba(0, 0, 0, 0.36);
   border: 2px solid #000;
-  margin: 0 auto;
-  background-color: #555;
 }
 
 .blog_btn{
@@ -150,6 +154,14 @@ a{
   background-position: center;
 }
 
+.fadeInUp,.slideInLeft,.slideInRight{
+  opacity: 1;
+  transition-duration: 3.5s;
+}
+
+.tada{
+  animation-delay:2.5s;
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
@@ -197,7 +209,7 @@ a{
   }
 
   .d-h3{
-    font-size: 46px;
+    font-size: 35px;
     margin-left: 0;
   }
 
@@ -232,10 +244,6 @@ a{
     margin-bottom: 10px;
   }
 
-  .d-h3{
-    font-size: 35px;
-  }
-
   .kanagawa,.sizuoka,.yamanasi{
     height: 20vh;
   }
@@ -247,6 +255,7 @@ a{
   .header_text p{
     margin-bottom: 0;
     font-size: 15px;
+    margin-bottom: 10px;
   }
 
   .btn{

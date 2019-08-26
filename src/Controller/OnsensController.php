@@ -42,7 +42,7 @@ class OnsensController extends AppController
      */
     public function index()
     {
-        $this->viewbuilder()->layout('my_layout');
+        $this->viewbuilder()->setLayout('my_layout');
 
         $onsens = $this->paginate($this->Onsens);
         $this->set(compact('onsens'));
@@ -58,7 +58,7 @@ class OnsensController extends AppController
      */
     public function view($id = null)
     {
-        $this->viewbuilder()->layout('detail_layout');
+        $this->viewbuilder()->setLayout('detail_layout');
 
         $onsen = $this->Onsens->get($id, [
             'contain' => []
@@ -80,7 +80,7 @@ class OnsensController extends AppController
 
     public function serch()
     {
-        $this->viewbuilder()->layout('my_layout');
+        $this->viewbuilder()->setLayout('my_layout');
         $str = $this->request->data();
         $new = $this->Onsens->find()->where(['prefectureint' => $str['filed']]);
         $this->set('onsens', $new);
@@ -94,7 +94,7 @@ class OnsensController extends AppController
 
     public function type($id = null)
     {
-        $this->viewbuilder()->layout('my_layout');
+        $this->viewbuilder()->setLayout('my_layout');
 
         $onsens = $this->Onsens->find('all')
         ->where(['eat'=>'◯']);
@@ -103,7 +103,7 @@ class OnsensController extends AppController
 
     public function type1($id = null)
     {
-        $this->viewbuilder()->layout('my_layout');
+        $this->viewbuilder()->setLayout('my_layout');
 
         $onsens = $this->Onsens->find('all')
         ->where(['sauna'=>'◯']);
@@ -112,7 +112,7 @@ class OnsensController extends AppController
 
     public function type2($id = null)
     {
-        $this->viewbuilder()->layout('my_layout');
+        $this->viewbuilder()->setLayout('my_layout');
 
         $onsens = $this->Onsens->find('all')
         ->where(['towel'=>'◯']);
@@ -121,7 +121,7 @@ class OnsensController extends AppController
 
     public function type3($id = null)
     {
-        $this->viewbuilder()->layout('my_layout');
+        $this->viewbuilder()->setLayout('my_layout');
 
         $onsens = $this->Onsens->find('all')
         ->where(['hot_stone'=>'◯']);
@@ -130,7 +130,7 @@ class OnsensController extends AppController
 
     public function type4($id = null)
     {
-        $this->viewbuilder()->layout('my_layout');
+        $this->viewbuilder()->setLayout('my_layout');
 
         $onsens = $this->Onsens->find('all')
         ->where(['open_bath'=>'◯']);
