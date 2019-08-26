@@ -3,7 +3,8 @@
 -- Host: localhost    Database: kantoonsens
 -- ------------------------------------------------------
 -- Server version	5.6.44
-
+CREATE DATABASE kanagawaonsens;
+USE kanagawaonsens;
 
 --
 -- Table structure for table `onsens`
