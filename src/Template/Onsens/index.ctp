@@ -76,7 +76,7 @@
           <div class="article_inner-box animated">
               <h2><a href="<?= $this->Url->build(['action'=>'view',$onsen->id]); ?>"><?= h($onsen->name);?></a></h2>
                 <div class="p_box">
-                  <p class="<?php echo $this->element('functions', ["var" => $onsen->prefectureint]); ?>"><?= $onsen->prefecture ?></p>
+                  <p class="<?= $this->element('functions', ["var" => $onsen->prefectureint]); ?>"><?= $onsen->prefecture ?></p>
                 </div>
                 <p class="front-img"><?= $this->Html->image($onsen->picint.'.jpg', [
                                     'url' => ['controller' => 'onsens', 'action' => 'view',$onsen->id]
