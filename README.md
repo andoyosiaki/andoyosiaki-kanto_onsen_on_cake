@@ -33,4 +33,3 @@
 * Atom Editor  
 * animate.css
 * jquery
-* inview.js
